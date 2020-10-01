@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.token;
+const token = 'NzYxMTE1NzE2NzE5NjA3ODEw.X3V6Pw.AWa0Dqo2h3SJ9cSYKs4gAeLKxHY';
 const welcomeChannelName = "안녕하세요";
 const byeChannelName = "안녕히가세요";
 const welcomeChannelComment = "안녕? 눈을 깜박이지마!.";
@@ -31,8 +31,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === 'ping') {
-    message.reply('pong');
+  if(message.content === 'ㅎㅇ땅콩?') {
+    message.reply('ㅎㅇ? (목뽀각)');
   }
 });
 
